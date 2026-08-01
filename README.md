@@ -1,5 +1,6 @@
 # find digit number
 
+find digit number with logistic regression
 
 ## License
 

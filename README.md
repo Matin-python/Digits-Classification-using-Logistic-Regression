@@ -2,6 +2,12 @@
 
 find digit number with logistic regression
 
+
+## Technologies Used
+- Python 3
+- scikit-learn
+- matplotlib
+
 ## License
 
 This project is licensed under the MIT License.

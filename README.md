@@ -61,15 +61,12 @@ Each image is flattened into a one-dimensional feature vector before being used 
 ```text
 Digits-Classification-Logistic-Regression/
 │
-├── logistic_regression_digits.py
+├── digits_logistic_regression.py
 ├── test dataset/
 │   ├── 0.jpg
 │   ├── 1.jpg
 │   ├── ...
 │   └── 9.jpg
-├── screenshots/
-│   ├── dataset_sample.png
-│   └── prediction_result.png
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -106,7 +103,7 @@ pip install numpy opencv-python scikit-learn matplotlib
 ## How to Run
 
 ```bash
-python logistic_regression_digits.py
+python digits_logistic_regression.py
 ```
 
 The program will:
@@ -151,32 +148,15 @@ Accuracy Score = 100%
 *(Results may vary because the training/testing data is randomly split each run.)*
 
 
-## Screenshots
-
-### Dataset Sample
-
-![Dataset Sample](screenshots/dataset_sample.png)
-
-### Prediction Results
-
-![Prediction Results](screenshots/prediction_result.png)
-
-
 ## Related Projects
 
 This project is part of a collection exploring different machine learning algorithms using the **Digits dataset**.
-
-### 🔢 Binary Digits Classification
-
-A Logistic Regression model trained to classify only digits **0** and **1**, demonstrating binary classification.
-
-➡️ **Repository:** *Add your Binary Classification repository link here.*
 
 ### 🎯 Handwritten Digit Clustering using K-Means
 
 An unsupervised learning project that groups handwritten digits into clusters using the K-Means algorithm without using class labels during training.
 
-➡️ **Repository:** *Add your K-Means repository link here.*
+➡️ **Repository:** *Add my K-Means repository link here.*
 
 
 ## Future Improvements

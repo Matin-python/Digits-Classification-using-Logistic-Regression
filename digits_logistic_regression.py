@@ -1,14 +1,14 @@
 import numpy as np 
-import pandas as pd
-import seaborn as sns
+
+import cv2
+
 from sklearn import linear_model 
 from sklearn import datasets
-import sklearn.metrics as sm
+from sklearn import metrics as sm
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
-import cv2
 from sklearn.metrics import accuracy_score
-from scipy.stats import mode
+
+import matplotlib.pyplot as plt
 
 
 digits = datasets.load_digits()
@@ -18,6 +18,7 @@ print("digits.data.shape= ", digits.data.shape)
 print()
 print("digits.images.shape= ", digits.images.shape)
 print('=' * 50)
+
 # print(digits.data)
 # print(digits.images)
 # print(digits.target)
@@ -66,4 +67,4 @@ out = reg_logestic.predict(image)
 print(out)
 
 real_out = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-print(accuracy_score(real_out, out))
+print("accuracy score= ", accuracy_score(real_out, out)*100, "%")

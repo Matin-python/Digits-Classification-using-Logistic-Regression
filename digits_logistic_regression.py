@@ -48,10 +48,10 @@ for i in range(y_test.size):
 # print(y_test.size)
 
 correct_percentage = (cor * 100) / y_test.size
-print("correct prediction= ", correct_percentage, "%")
+print("Correct Prediction= ", correct_percentage, "%")
 
 msr = sm.mean_squared_error(y_test, out_prod)
-print('mean squared error= ', msr)
+print('Mean Squared Error= ', msr)
 
 
 image = []
@@ -65,8 +65,8 @@ for i in range (10):
 # plt.show()
 print()
 out = reg_logestic.predict(image)
-print("out prediction= ", out)
+print("Predicted Output= ", out)
 
 real_out = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-print("real output= ", real_out)
-print("accuracy score= ", accuracy_score(real_out, out)*100, "%")
+print("Real Output= ", real_out)
+print("Accuracy Score= ", accuracy_score(real_out, out)*100, "%")

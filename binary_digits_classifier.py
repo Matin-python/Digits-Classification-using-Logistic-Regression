@@ -6,16 +6,19 @@ import matplotlib.pyplot as plt
 
 digits = datasets.load_digits()
 
+print('=' * 50)
+print("digits.data.shape= ", digits.data.shape)
+print()
+print("digits.images.shape= ", digits.images.shape)
+print('=' * 50)
+
 # print(digits.data)
 # print(digits.images)
-# print(digits.data.shape)
-# print(digits.images.shape)
 # print(digits.target)
-# print()
 
 # plt.imshow(digits.images[100])
 # plt.show()
-
+ 
 
 new_data = []
 new_target = []
@@ -30,14 +33,15 @@ x_train, x_test, y_train, y_test = train_test_split(new_data, new_target, test_s
 reg_logestic = linear_model.LogisticRegression()
 reg_logestic.fit(x_train, y_train)
 
-out_prod = reg_logestic.predict(x_test)
+out_pred = reg_logestic.predict(x_test)
 
-print('Out put prediction is= ')
-print(out_prod)
-print('Real out put is=')
-print(y_test)
+print('Output prediction is= ')
+print(out_pred)
+print('Real output is= ')
+print([int(v) for v in y_test])
+print()
 
-err = y_test - out_prod
+err = y_test - out_pred
 cor = 0
 for i in err:
     if err[i] == 0:

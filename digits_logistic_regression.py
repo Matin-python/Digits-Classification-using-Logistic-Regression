@@ -63,8 +63,10 @@ for i in range (10):
 
 # plt.imshow(image[1].reshape(8, 8))
 # plt.show()
+print()
 out = reg_logestic.predict(image)
-print(out)
+print("out prediction= ", out)
 
 real_out = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+print("real output= ", real_out)
 print("accuracy score= ", accuracy_score(real_out, out)*100, "%")

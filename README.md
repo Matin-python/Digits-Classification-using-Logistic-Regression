@@ -1,9 +1,14 @@
-# Handwritten Digits Classification using Logistic Regression
+# 🔢 Handwritten Digit Recognition (Machine Learning)
 
 Classifying handwritten digits (0–9) using **Logistic Regression** and the **scikit-learn Digits dataset**. This project demonstrates how a machine learning classification algorithm can recognize handwritten numbers and predict custom digit images.
 
 
 ## Overview
+
+This project contains two classification tasks:
+
+ - Multiclass Classification (digits 0–9)
+ - Binary Classification (digits 0 and 1)
 
 This project trains a **Logistic Regression** model to recognize handwritten digits from the built-in **Digits dataset** provided by scikit-learn.
 
@@ -14,7 +19,7 @@ The project demonstrates the complete machine learning workflow, including data 
 
 ## Features
 
-* 🔢 Multi-class handwritten digit classification (0–9)
+🔹 Multiclass Digit Classification (0–9)
 * 🤖 Logistic Regression classifier
 * 📊 Uses the scikit-learn Digits dataset
 * 📈 Train/test data splitting
@@ -22,7 +27,12 @@ The project demonstrates the complete machine learning workflow, including data 
 * 📉 Mean Squared Error (MSE) calculation
 * 🖼️ Prediction on custom handwritten digit images
 * 📚 Beginner-friendly implementation
-
+  
+🔹 Binary Digit Classification (0 vs 1)
+* Filters the dataset to only digits 0 and 1
+* Trains a Logistic Regression classifier
+* Compares predicted and actual labels
+* Calculates classification accuracy
 
 ## Technologies Used
 
@@ -62,6 +72,7 @@ Each image is flattened into a one-dimensional feature vector before being used 
 Digits-Classification-Logistic-Regression/
 │
 ├── digits_logistic_regression.py
+├── binary_digit_classifier.py
 ├── test dataset/
 │   ├── 0.jpg
 │   ├── 1.jpg
@@ -102,8 +113,13 @@ pip install numpy opencv-python scikit-learn matplotlib
 
 ## How to Run
 
+Multiclass Classification
 ```bash
 python digits_logistic_regression.py
+```
+Binary Classification
+```bash
+python binary_digit_classifier.py
 ```
 
 The program will:

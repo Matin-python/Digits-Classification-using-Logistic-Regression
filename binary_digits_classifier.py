@@ -36,7 +36,7 @@ print('=' * 50)
 
 x_train, x_test, y_train, y_test = train_test_split(new_data, new_target, test_size=0.2)
 
-reg_logestic = linear_model.LogisticRegression()
+reg_logestic = linear_model.LogisticRegression(max_iter=10000)
 reg_logestic.fit(x_train, y_train)
 
 out_pred = reg_logestic.predict(x_test)
@@ -50,7 +50,7 @@ print()
 err = y_test - out_pred
 cor = 0
 for i in err:
-    if err[i] == 0:
+    if i == 0:
         cor += 1
 
 correct_percentage = (cor * 100) / len(y_test)

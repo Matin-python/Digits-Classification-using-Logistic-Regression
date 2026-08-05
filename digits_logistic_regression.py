@@ -34,14 +34,14 @@ x_train, x_test, y_train, y_test = train_test_split(X, y, test_size= 0.2)
 reg_logestic = linear_model.LogisticRegression()
 reg_logestic.fit(x_train, y_train)
 
-out_prod = reg_logestic.predict(x_test)
+out_pred = reg_logestic.predict(x_test)
 
-# print(out_prod)
+# print(out_pred)
 # print(y_test)
 
 cor = 0
 for i in range(y_test.size):
-    if out_prod[i] == y_test[i]:
+    if out_pred[i] == y_test[i]:
         cor += 1
 
 # print (cor, incor)
@@ -50,7 +50,7 @@ for i in range(y_test.size):
 correct_percentage = (cor * 100) / y_test.size
 print("Correct Prediction= ", correct_percentage, "%")
 
-msr = sm.mean_squared_error(y_test, out_prod)
+msr = sm.mean_squared_error(y_test, out_pred)
 print('Mean Squared Error= ', msr)
 
 

@@ -1,16 +1,14 @@
+import numpy as np
+
 from sklearn import linear_model 
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
+from sklearn import metrics as sm
+
 import matplotlib.pyplot as plt
 
 
 digits = datasets.load_digits()
-
-print('=' * 50)
-print("digits.data.shape= ", digits.data.shape)
-print()
-print("digits.images.shape= ", digits.images.shape)
-print('=' * 50)
 
 # print(digits.data)
 # print(digits.images)
@@ -27,6 +25,14 @@ for i in range (digits.data.shape[0]):
         new_data.append(digits.data[i])
         new_target.append(digits.target[i])
 
+new_data = np.array(new_data)
+new_target = np.array(new_target)
+
+print('=' * 50)
+print("new_data.shape= ", new_data.shape)
+print()
+print("new_target.shape= ", new_target.shape)
+print('=' * 50)
 
 x_train, x_test, y_train, y_test = train_test_split(new_data, new_target, test_size=0.2)
 
@@ -50,3 +56,5 @@ for i in err:
 correct_percentage = (cor * 100) / len(y_test)
 print("correct prediction= ", correct_percentage, "%")
 
+msr = sm.mean_squared_error(y_test, out_pred)
+print('Mean Squared Error= ', msr)

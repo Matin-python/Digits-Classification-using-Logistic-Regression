@@ -164,6 +164,17 @@ Accuracy Score = 100%
 *(Results may vary because the training/testing data is randomly split each run.)*
 
 
+## Screenshots
+
+### Logistic Regression Prediction
+
+![Prediction](screenshots/prediction.png)
+
+### Sample Digits
+
+![Digits](screenshots/digits.png)
+
+
 ## Related Projects
 
 This project is part of a collection exploring different machine learning algorithms using the **Digits dataset**.
@@ -172,17 +183,19 @@ This project is part of a collection exploring different machine learning algori
 
 An unsupervised learning project that groups handwritten digits into clusters using the K-Means algorithm without using class labels during training.
 
-➡️ **Repository:** *Add my K-Means repository link here.*
+➡️ **Repository:** 
+
+https://github.com/Matin-python/Digit-Clustering-using-K-Means.git
 
 
 ## Future Improvements
 
 * 📊 Confusion matrix visualization
-* 📈 Classification report (Precision, Recall, F1-score)
-* 🎨 GUI for drawing digits
+* 📈 Precision, Recall and F1-score
+* 🔢 Support for additional classifiers (KNN, SVM, Random Forest)
+* 🎨 GUI for drawing handwritten digits
 * 📷 Real-time webcam digit recognition
-* 🧠 Compare multiple classification algorithms
-* 🔄 Hyperparameter tuning
+* 🧠 Deep learning (CNN) implementation
 * 💾 Save and load trained models
 * 🌐 Deploy as a web application
 

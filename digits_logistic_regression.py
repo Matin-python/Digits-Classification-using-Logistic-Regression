@@ -19,6 +19,16 @@ print()
 print("digits.images.shape= ", digits.images.shape)
 print('=' * 50)
 
+fig, axes = plt.subplots(2, 5, figsize=(8, 4))
+
+for ax, image, label in zip(axes.ravel(), digits.images[:10], digits.target[:10]):
+    ax.imshow(image, cmap="gray")
+    ax.set_title(str(label))
+    ax.axis("off")
+
+plt.tight_layout()
+plt.show()
+
 # print(digits.data)
 # print(digits.images)
 # print(digits.target)
@@ -70,3 +80,13 @@ print("Predicted Output= ", out)
 real_out = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 print("Real Output= ", real_out)
 print("Accuracy Score= ", accuracy_score(real_out, out)*100, "%")
+
+fig, axes = plt.subplots(2, 5, figsize=(8, 4))
+
+for ax, image, label in zip(axes.ravel(), image[:10], real_out):
+    ax.imshow(image.reshape(8, 8), cmap="gray")
+    ax.set_title(str(label))
+    ax.axis("off")
+
+plt.tight_layout()
+plt.show()

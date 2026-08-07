@@ -95,6 +95,9 @@ Handwritten-Digit-Recognition/
 │   ├── 1.jpg
 │   ├── ...
 │   └── 9.jpg
+├── screenshots/
+│   ├── custom_digits.png
+│   └── digits_dataset_sample.png
 ├── requirements.txt
 ├── LICENSE
 └── README.md
@@ -156,6 +159,23 @@ python binary_digits_classifier.py
 - ✅ Classification Accuracy
 - 📉 Mean Squared Error (MSE)
 
+## Dataset
+
+This project uses the **Digits Dataset** from **scikit-learn**, which contains **1,797 handwritten digit samples** represented as **8×8 grayscale images**.
+
+The trained model is also tested on custom digit images stored in the **test dataset** folder.
+
+### Sample from the scikit-learn Digits Dataset
+
+<p align="center">
+  <img src="screenshots/digits_dataset_sample.png" width="280">
+</p>
+
+### Sample Custom Test Images
+
+<p align="center">
+  <img src="screenshots/custom_digits.png" width="350">
+</p>
 
 ## Example Output
 

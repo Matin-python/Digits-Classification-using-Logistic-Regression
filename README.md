@@ -168,13 +168,13 @@ The trained model is also tested on custom digit images stored in the **test dat
 ### Sample from the scikit-learn Digits Dataset
 
 <p align="center">
-  <img src="screenshots/digits_dataset_sample.png" width="280">
+  <img src="screenshots/digits_dataset_sample.png" width="560">
 </p>
 
 ### Sample Custom Test Images
 
 <p align="center">
-  <img src="screenshots/custom_digits.png" width="350">
+  <img src="screenshots/custom_digits.png" width="560">
 </p>
 
 ## Example Output
